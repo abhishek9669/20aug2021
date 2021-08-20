@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css soiar system</title>
+        <style>
+            body{
+                background-image: url(./space.png);
+                background-size: cover;
+            }
+            .sun{
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
+                background: tomato;
+                background-image:url(./1629456022090.png);
+               
+                background-size: cover;
+                margin: 300px auto;
+                position: relative;
+                
+
+            }
+            .mercury{
+                width:50px ;
+                height: 50px;
+                border-radius: 50px;
+                background-image: url(./1629456772439.png);
+                background-size: cover;
+                position: absolute;
+                bottom: 20px;
+                right:  -100px;
+               
+                animation-name:mercuryAnimation;
+                animation-duration: 1s;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                
+                transform-origin: -108px center;
+            }
+            @keyframes mercuryAnimation {
+                to{
+                    transform: rotateZ(0deg);
+                   
+                }
+                from{
+                    transform: rotateZ(-359deg);
+                }
+            }
+            .venus{
+                width:70px ;
+                height: 70px;
+                border-radius: 70px;
+                background-image: url(./1629458503063.png);
+                background-size: cover;
+                background-size: cover;
+                position: absolute;
+                bottom: 13px;
+                right:  -220px;
+               
+                animation-name:mercuryAnimation;
+                animation-duration: 2s;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                
+                transform-origin: -236px center;
+            }
+            @keyframes mercuryAnimation {
+                to{
+                    transform: rotateZ(0deg);
+                }
+                from{
+                    transform: rotateZ(-359deg);
+                }
+
+            }
+            .earth{
+                width:80px ;
+                height: 80px;
+                border-radius: 80px;
+                background-image: url(./1629459566505.png);
+                background-size: cover;
+                background-size: cover;
+                position: absolute;
+                bottom: 13px;
+                right:  -358px;
+               
+                animation-name:mercuryAnimation;
+                animation-duration: 3s;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                
+                transform-origin: -358px center;
+            }
+            @keyframes mercuryAnimation {
+                to{
+                    transform: rotateZ(0deg);
+                }
+                from{
+                    transform: rotateZ(-359deg);
+                }
+
+            }
+            .mars{
+                width:70px ;
+                height: 70px;
+                border-radius: 70px;
+                background-image: url(./1629461244417.png);
+                background-size: cover;
+                background-size: cover;
+                position: absolute;
+                bottom: 13px;
+                right:  -480px;
+               
+                animation-name:mercuryAnimation;
+                animation-duration: 4s;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                
+                transform-origin: -358px center;
+            }
+            @keyframes mercuryAnimation {
+                to{
+                    transform: rotateZ(0deg);
+                }
+                from{
+                    transform: rotateZ(-359deg);
+                }
+
+            }
+       
+            
+    
+               
+               
+            
+        
+            
+        </style>
+    </head>
+    <body>
+        <div class="rocket"></div>
+        <div class="sun">
+            <div class="mercury"></div>
+            <div class="venus"></div>
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+            <div class="mars"></div>
+        </div>
+        
+    </body>
+</html>
